@@ -1,0 +1,348 @@
+h1 { color:  rgb(0, 0, 0); text-align: center;
+    font-size: 20px;font-style: open sans;
+}
+
+/*fonte do texto grande do site*/
+h2 { color: rgb(0, 0, 0); text-align: left;
+    font-size: 30px;font-style: open sans;
+    }
+
+/*fonte do botoes de atalho provisorio*/
+h4 { color: rgb(169, 16, 118) ; text-align: center;
+  font-size: 10px;  font-style: open sans; 
+}
+
+/*fonte das letras de avisos*/
+h5 { color: rgb(0, 0, 0) ; text-align: center;
+  font-size: 20px; font-style: open sans;  
+}
+
+
+/*fonte do botoes cabeca  login site*/
+  
+a.classe2:link, a.classe2:visited {
+	text-decoration: none;
+  font-size: 18px;  
+  text-align: right;
+  align-items: right;
+  color: rgb(253, 253, 253)
+	}
+a.classe2:hover {
+
+	color: rgb(169, 201, 12);
+	}
+a.classe2:active {
+	text-decoration: none;
+	}
+
+  /*fonte do botoes cabeca cadastro site*/
+a.classe3:link, a.classe3:visited {
+	text-decoration: none;
+  font-size: 18px;  
+  text-align: right;
+  align-items: right;
+  color: rgb(0, 0, 0)
+
+  
+	}
+a.classe3:hover {
+
+	color: rgb(169, 201, 12);
+	}
+a.classe3:active {
+	text-decoration: none;
+	}
+
+/*a{
+       text-decoration: none;
+       background-color: white;
+       color: black;
+       border: 8px solid black
+       padding: 1em 3px 30px 5px;
+       
+   }
+<body style= " background-color : #007fff;"*/
+
+/*//////////////////////////////login/////////////////////*/
+login.css 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url() no-repeat;
+    background-size: cover;
+}
+ 
+.login-box {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #191970;
+}
+ 
+.login-box h1 {
+    float: left;
+    font-size: 40px;
+    border-bottom: 4px solid #191970;
+    margin-bottom: 50px;
+    padding: 13px;
+}
+ 
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #191970;
+}
+ 
+.fa {
+    width: px;
+    float: left;
+    text-align: center;
+}
+ 
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    float: left;
+    margin: 0 10px;
+}
+ 
+.button {
+    width: 100%;
+    padding: 8px;
+    color: #ffffff;
+    background: none #191970;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+   /*///////////////////////////////////////////////////*/
+   
+   /*///////////////////botao redondo/////////////////////*/
+  .round-button {
+    display:block;
+    width:90px;
+    height:70px;
+    line-height:80px;
+    border: 2px solid #f5f5f5;
+    border-radius: 40%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #8e873c;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #999938;
+}
+
+ /*////////////////////////////////////////*/
+
+
+/*//////////////////////////////login que cai/////////////////////
+
+element.style {
+}
+html, body {
+    background-color: #c8c5c8;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+////////////////////////////////////*/
+ 
+   /* controla as imagem do portfolio */ 
+  .coluna{      
+    float: right;
+    width: 33.33%;
+  text-align:center;
+  padding: 20px 0px 0px 0px;
+  
+}
+  
+  /*////////////////////////////////////////*/
+
+
+  /*///////////////////formulario email/////////////////////*/
+
+.formularioContato { 
+
+  max-width:600px; 
+  height:auto; 
+  float:none; 
+  margin:auto; 
+  padding:1em; 
+  margin-bottom:1em; 
+  border-radius:6px; 
+  background:#fff; 
+  box-shadow: 1px 0px 1.2px 0px #ccc; 
+  position:relative; 
+}
+
+.formularioContato:before { 
+
+  width:0; 
+  height:0; 
+  border:15px solid transparent; 
+  border-bottom-color:#fff; 
+  content:""; 
+  position:absolute; 
+  left:6%; 
+  top:-4.5%; 
+  margin-top:-4px; 
+  margin-left:6px; 
+  z-index:2;
+
+}
+
+.formularioContato label  { 
+
+  float:left; 
+  width:100%; 
+  margin-bottom:1.2em; 
+
+}
+
+.formularioContato label span {
+
+  width: 100%;
+  float: left;
+  color: #999;
+  margin-bottom: 6px;
+  font-family:'open_sansregular'; 
+
+}
+
+.formularioContato label input  { 
+
+  font-size:1em; 
+  color:#555; 
+  font-family:'open_sansregular'; 
+  outline:none; 
+  border:1px #dee5ed solid; 
+  border-radius:4px; 
+  padding:0.6em; 
+  transition: 0.3s;  
+
+}
+
+.formularioContato label select { 
+
+  font-size:1em; 
+  color:#555; 
+  border:1px #dee5ed solid; 
+  border-radius:4px; 
+  padding:0.6em; 
+  outline:none; 
+  transition: 0.3s;  
+
+}
+
+.formularioContato label textarea { 
+
+  font-size:1em; 
+  color:#555; 
+  border:1px #dee5ed solid; 
+  border-radius:4px; 
+  padding:0.6em; 
+  outline:none;
+  transition: 0.3s;   
+
+}
+
+.formularioContato label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
+.formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+
+.formularioContato button.btn-envia { 
+
+  background-color:rgb(37,174,230); 
+  width:100%; display:block; 
+  margin:auto; cursor:pointer; 
+  border-radius:4px;  
+  border:0; 
+  padding:0.8em 0em; 
+  color:#fff; 
+  font-size:1.3em; 
+  font-family:'open_sansbold'; 
+  text-align: center;
+  transition: 0.3s;   
+
+}
+
+.formularioContato button.btn-envia:hover { 
+
+  background-color:#333; 
+
+}
+
+    /*//////////////////cadastos//////////////////////*/
+  body{
+    margin: 0;
+    padding: 0;
+    /*outline: none;
+    font-family: "Arial";*/
+  }
+  
+  .txt{
+    height: 35px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEE;
+    padding: 4px;	
+  }
+  
+  table#tab_lista{
+      height: 250px;
+      margin: 0 auto;
+      padding: 10px;
+      margin-top: 100px;
+      border-collapse: collapse;
+      box-shadow: 5px 5px 2.5px #888888;
+      border:1px solid #000000;
+  }
+  
+  table#tab_lista td, tr {
+      border: 1px solid #CCC;
+  }
+  
+  #tab_cadastro{
+    height: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 200px;
+  }
+  
+  input#botao_cad{
+    width: 100px;
+    height: 30px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+  }
+  
+  #cor_cabecalho{
+      background-color: #AAA;
+      font-weight: bold;
+      text-align: center;
+  }
+    /*////////////////////////////////////////*/
