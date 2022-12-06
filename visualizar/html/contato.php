@@ -1,3 +1,4 @@
+<?php include 'header.php'; ?>
 <h5> Contato</br>
 
     Autores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .</br>
@@ -41,3 +42,4 @@
 
     </form>
 </div>
+<?php include 'footer.php'; ?>

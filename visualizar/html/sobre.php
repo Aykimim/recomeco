@@ -1,3 +1,4 @@
+<?php include 'header.php'; ?>
 <h5>Nossa missão</br></br>
 						
 	No momento atual, se você não está na internet, você não existe com isso </br>
@@ -6,4 +7,4 @@
 	Com isso em mente este projeto visa construir um espaço de negócios seguro para </br>
 	trabalhadores autônomos.</br>
 </h5>
-
+<?php include 'footer.php'; ?>

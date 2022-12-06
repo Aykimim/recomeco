@@ -1,4 +1,5 @@
- <!-- formulario de login -->
+<?php include 'header.php'; ?>
+<!-- formulario de login -->
  	
  <h1>LOGIN</h1></br>
  <form action="" method="post">
@@ -16,3 +17,4 @@
  </form>
   
 <!--fim formulario de login -->
+<?php include 'footer.php'; ?>

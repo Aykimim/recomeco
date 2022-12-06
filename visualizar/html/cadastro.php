@@ -1,7 +1,6 @@
-
-
+<?php include 'header.php'; ?>
 	<div id="cadastro">
-    	<form name="cadastro" method="post" enctype="multipart/form-data" action="validarcadastro.php">
+    	<form name="cadastro" method="post" enctype="multipart/form-data" action="/cotroladormysql/salvarcadastro.php">
     		<table id="tab_cadastro">
             	<tr>    
                     <td>Foto:</td>
@@ -60,3 +59,4 @@
             </table>
         </form>
     </div>
+    <?php include 'footer.php'; ?>
