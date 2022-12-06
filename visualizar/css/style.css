@@ -1,9 +1,10 @@
 /*//////////////////////////////cabecario/////////////////////*/
 
 body{
-    min-height:1000px;
-    background:gray;
+    background:#fcfcfc;
     font-family:sans-serif;
+    margin: 0;
+   padding: 0;
   }
 header {
 
@@ -12,9 +13,9 @@ header {
   
 }
 
-body {
-  background: #fcfcfc;
-  font-family: sans-serif;
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 header {
@@ -44,29 +45,30 @@ header {
   background: #03989e;
   width: 100vw;
   padding: 0px;
-  padding-bottom: 45px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
 .header-cad {
   
-  color: rgb(0, 0, 0);
   background: #c7ad7f;
   font-size: 20px;
-  font-style: ;
-  border: 5px solid;
+  border: 6px solid;
   border-radius: 50px;
   border-color: #c7ad7f;
   align-content: space-between;
   display: flex;
-  margin: 1rem 1rem;
+  margin: 1rem rem;
+
 }
 
 .header-login {
-  color: rgb(0, 0, 0);
+
   text-align: center;
   font-size: 20px;
   font-style: open;
+  margin: 10px 10px;
+  
 }
 
 /*////////////////////////////// FIM cabecario/////////////////////*/
@@ -123,37 +125,9 @@ a.classe2:active {
   text-decoration: none;
 }
 
-/*fonte do botoes cabeca cadastro site*/
-a.classe3:link,
-a.classe3:visited {
-  text-decoration: none;
-  font-size: 18px;
-  text-align: right;
-  align-items: right;
-  color: rgb(0, 0, 0)
-}
-
-a.classe3:hover {
-
-  color: rgb(169, 201, 12);
-}
-
-a.classe3:active {
-  text-decoration: none;
-}
-
-/*a{
-       text-decoration: none;
-       background-color: white;
-       color: black;
-       border: 8px solid black
-       padding: 1em 3px 30px 5px;
-       
-   }
-<body style= " background-color : #007fff;"*/
 
 /*caixa de login*/
-login.css body {
+login {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -237,6 +211,10 @@ login.css body {
   background: #999938;
 }
 
+.alignRight{
+  margin-left: auto;
+}
+
 /*FIM botao redondo*/
 
 
@@ -258,16 +236,8 @@ body {
 }
 ////////////////////////////////////*/
 
-/* controla as imagem do portfolio */
-.coluna {
-  float: right;
-  width: 33.33%;
-  text-align: center;
-  padding: 20px 0px 0px 0px;
 
-}
-
-/*//////////////////barra de pesquisa//////////////////////*/
+/*barra de pesquisa*/
 #divBusca {
   background-color: #fcfcfc;
   border: solid 1px;
@@ -276,10 +246,12 @@ body {
   border: 1px solid;
   border-radius: 6px;
   border-color: rgb(10, 201, 235);
+  margin: 10px 10px;
 }
 
+
 #txtBusca {
-  float: left;
+  float: right;
   background-color: transparent;
   padding-left: 5px;
   font-style: open sans;
@@ -288,6 +260,7 @@ body {
   height: 32px;
   width: 260px;
 }
+/*FIM barra de pesquisa*/
 
 /*formulario DE CONTATO*/
 
@@ -420,12 +393,7 @@ body {
 /*FIM DO formulario DE CONTATO*/
 
 /*FORMULARIO DE cadastos*/
-body {
-  margin: 0;
-  padding: 0;
-  /*outline: none;
-    font-family: "Arial";*/
-}
+
 
 .txt {
   height: 35px;
@@ -482,10 +450,6 @@ footer {
   /*box-sizing: border-box;*/
 }
 
-body {
-  background: #fcfcfc;
-  font-family: sans-serif;
-}
 
 footer {
   position: absolute;
@@ -507,12 +471,6 @@ footer {
   text-align: center;
 }
 
-.footer-content h3 {
-  font-size: 2.1rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
 
 .footer-content p {
   max-width: 500px;
@@ -593,7 +551,7 @@ footer {
 
 .footer-menu ul li {
   padding-right: 10px;
-  display: block;
+  display: flex;
 }
 
 .footer-menu ul li a {
