@@ -1,10 +1,10 @@
 /*//////////////////////////////cabecario/////////////////////*/
 
-/*body{
+body{
     min-height:1000px;
     background:gray;
     font-family:sans-serif;
-  }*/
+  }
 header {
 
   margin: 0;
@@ -39,44 +39,38 @@ header {
   align-items: center;
   justify-content: left;
   margin: 1rem 1rem;
+  
 }
 
 .header-preto {
   background: #03989e;
   width: 100vw;
   padding: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   text-align: center;
 }
 
 .header-cad {
-  color: rgb(0, 0, 0);
+  
+  color: rgb(199, 129, 129);
+  background: #c7ad7f;
   text-align: center;
   font-size: 20px;
   font-style: open sans;
-  border: 1px solid;
+  border: 5px solid;
   border-radius: 6px;
-  border-color: rgb(168, 153, 14);
+  border-color: #c7ad7f;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
   align-content: space-between;
   display: flex;
-  align-items: center;
-  justify-content: right;
   margin: 1rem 1rem;
 }
 
 .header-login {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 20px;
-  font-style: open sans;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  align-content: space-between;
-  align-items: center;
-  justify-content: right;
-  margin: 1rem 1rem;
+  font-style: open;
 }
 
 /*////////////////////////////// FIM cabecario/////////////////////*/
