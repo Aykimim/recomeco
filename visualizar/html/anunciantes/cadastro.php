@@ -11,6 +11,16 @@
                     <td><input type="text" name="nome" required placeholder="Nome" id="nome" class="txt" /></td>
                 </tr>
                 <tr>
+                	<td>SobreNome:</td>
+                    <td><input type="text" name="sobrenome" required placeholder="sobrenome" id="nome" class="txt" /></td>
+                </tr>
+                <tr>
+                <tr>
+                    <tr>
+                	<td>Nome:</td>
+                    <td><input type="text" name="nome" required placeholder="Nome" id="nome" class="txt" /></td>
+                </tr>
+                <tr>
                 	<td>Nome exibido:</td>
                     <td><input type="text" name="usuarios" required placeholder="Nome a ser mostrado" id="nomeexibido" class="txt" /></td>
                 </tr>
@@ -44,12 +54,12 @@
                 
                 <tr>    
                     <td>Senha:</td>
-                    <td><input type="text" name="senhacd" required placeholder="Senha" id="senhacd" class="txt" /></td>
+                    <td><input type="text" name="senha" required placeholder="Senha" id="senhacd" class="txt" /></td>
                 </tr>
                 
                 <tr>
                     <td>Confirmar Senha:</td> 
-                    <td> <input type="password" name="csenha" required placeholder="Confirmar Senha" id="senhacd" class="txt" /></td>
+                    <td> <input type="password" name="senhaconf" required placeholder="Confirmar Senha" id="senhacd" class="txt" /></td>
                 </tr>
                  
                 <tr>    

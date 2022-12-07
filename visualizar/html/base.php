@@ -25,9 +25,9 @@
 <!--texto-->
 <h2>
   </br></br>
-  &nbsp Encontre</br>
-  &nbsp Profissionais</br>
-  &nbsp de Alto Padrão</br>
+  &nbsp&nbsp Encontre</br>
+  &nbsp&nbsp Profissionais</br>
+  &nbsp&nbsp de Alto Padrão</br>
   </br></br>
 </h2>
 <!--FIM texto-->
@@ -44,10 +44,10 @@
   </h5>
 
   <div class="container px-4 text-center">
-    <div class="row gx-5">
+    <div class="rounded row gx-5">
       <div class="col">
         <div class=" border bg-light"><img src="/visualizar/img/manhuacu.png" class="img-fluid"></div>
-        <figcaption class="figure-caption text-end">Manhuaçu.</figcaption>
+        <figcaption class="figure-caption text-center">Manhuaçu.</figcaption>
       </div>
       <div class="col">
         <div class=" border bg-light"><img src="/visualizar/img/manhumirim.png" class="img-fluid"></div>
