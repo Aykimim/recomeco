@@ -1,4 +1,8 @@
 <?php include 'header.php'; ?>
+<div class ="container min-vh-100">
+	<div class="row">
+        
+    </br></br>
 <h5>Aviso do site ao (a) visitante:</br></br>
 
     Ao ligar, informe que viu o profissional(a) no site Mão Amiga . Eles querem saber! 
@@ -12,4 +16,6 @@
     assim, desocupados com interesse em apenas puxar conversa, serão bloqueados.
     </br>
     </h5>
+    </div>
+</div>
     <?php include 'footer.php'; ?>

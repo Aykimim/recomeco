@@ -27,7 +27,7 @@
           <li><a href="/visualizar/html/sobre.php">Sobre</a></li>
           <li><a href="/visualizar/html/contato.php">Contato</a></li>
           <li><a href="/visualizar/html/politica.php">Politica</a></li>
-          <li><a href="/visualizar/html/cadastro.php">Anunciar</a></li>
+          <li><a href="/visualizar/html/anunciantes/cadastro.php">Anunciar</a></li>
         </ul>
       </div>
     </div>

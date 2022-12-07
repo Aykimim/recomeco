@@ -240,14 +240,7 @@ body {
 
 
 /*barra de pesquisa*/
-#divBusca {
-  background-color: #fcfcfc;
-  border: solid 1px;
-  border-radius: 15px;
-  width: 300px;
 
-  margin: 10px 10px;
-}
 
 
 #txtBusca {
@@ -517,7 +510,7 @@ footer {
   background: #000;
   width: 100vw;
   padding: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -526,6 +519,7 @@ footer {
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
+  margin: 1px  1px;
 }
 
 .footer-bottom p a {

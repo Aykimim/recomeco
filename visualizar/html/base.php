@@ -19,7 +19,7 @@
       </h2>
       <!--FIM texto-->
     </div>
-    <div class= "col-md-6">
+    <div class= "col-md-5">
       <!--BARRA DE PESQUISA-->
         <span id="divBusca">
           <form class="d-flex" role="search">
