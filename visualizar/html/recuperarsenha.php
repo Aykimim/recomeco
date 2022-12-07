@@ -1,6 +1,6 @@
 <div class="formularioContato">
 
-	<form method="post" action="cotroladormysql/emailrecuperacao.php" enctype="multipart/form-data" >
+	<form method="post" action="/cotroladormysql/emailrecuperacao.php" enctype="multipart/form-data" >
 
 		<input type="hidden" name="subject"  value="eykimim@hotmail.com" />
 

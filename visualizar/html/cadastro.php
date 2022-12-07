@@ -3,7 +3,7 @@
     	<form name="cadastro" method="post" enctype="multipart/form-data" action="/cotroladormysql/salvarcadastro.php">
     		<table id="tab_cadastro">
             	<tr>    
-                    <td>Foto:</td>
+                    <td>Foto de perfil:</td>
                     <td><input type="file" name="foto" required placeholder="Foto de Perfil" id="foto" class="txt" /></td>
                 </tr>
                 <tr>
@@ -12,7 +12,7 @@
                 </tr>
                 <tr>
                 	<td>Nome exibido:</td>
-                    <td><input type="text" name="nomeexibido" required placeholder="Nome a ser mostrado" id="nomeexibido" class="txt" /></td>
+                    <td><input type="text" name="usuarios" required placeholder="Nome a ser mostrado" id="nomeexibido" class="txt" /></td>
                 </tr>
                 <tr>    
                     <td>E-mail:</td>
@@ -52,7 +52,6 @@
                     <td> <input type="password" name="csenha" required placeholder="Confirmar Senha" id="senhacd" class="txt" /></td>
                 </tr>
                  
-                <!-- Conteúdo https://rafaelcouto.com.br/upload-simples-de-imagem-com-php-mysql/-->
                 <tr>    
                     <td colspan="2"><input type="submit" value="Cadastrar" name="cadastrar" id="botao_cad"></td>
                 </tr>
