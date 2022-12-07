@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <footer>
-    <div class="footer-content">
+    <div class="d-flex justify-content-center footer-content">
 
       <a href="/visualizar/html/base.php">
         <p> Mao amiga</p>
@@ -20,7 +20,7 @@
       </ul>
     </div>
 
-    <div class="footer-bottom">
+    <div class="d-flex justify-content-center footer-content  footer-bottom">
       <div class="footer-menu">
         <ul class="f-menu">
           <li><a href="/visualizar/html/base.php">Home</a></li>

@@ -80,13 +80,15 @@ h1 {
   font-style: open sans;
 }
 
-/*fonte do texto grande do site*/
+/*fonte do texto grande do site
 h2 {
   color: rgb(0, 0, 0);
   text-align: left;
   font-size: 30px;
   font-style: open sans;
-}
+  font-weight: bold;
+
+}*/
 
 /*fonte do botoes de atalho provisorio*/
 h4 {
@@ -243,9 +245,7 @@ body {
   border: solid 1px;
   border-radius: 15px;
   width: 300px;
-  border: 1px solid;
-  border-radius: 6px;
-  border-color: rgb(10, 201, 235);
+
   margin: 10px 10px;
 }
 
