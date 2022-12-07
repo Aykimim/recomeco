@@ -1,2 +1,2 @@
-<?php header("location:visualizar/html/base.html")?>
+<?php header("location:visualizar/html/base.php")?>
 
