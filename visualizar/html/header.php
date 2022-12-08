@@ -24,8 +24,8 @@
 <header>
 
   <div class="header-logo">
-
-    <a href="kimmim.shop.com/base.php">
+  
+    <a href="//kimmim.shop/index.php">
       <img src="/visualizar/img/logo sem fundo.png" height="50" width="200" vspace="1" hspace="1" />
     </a>
     <span class="alignRight">

@@ -4,7 +4,7 @@
 </br>
     Autores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .
 </br>
-<h7> Mestre jedI: Pedro</h7>
+<h7> Mestre jedi: Pedro</h7>
 </br>
 
     <div class="contato">
