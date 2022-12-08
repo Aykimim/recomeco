@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="row ">
-    <div class="mb-3">
+    <div class="mb-3 mt-3">
       <center>
         <h2>Catastre-se</h2>
       </center>
@@ -68,10 +68,10 @@
         <input type="checkbox" class="form-check-input" id="ternos">
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label>
       </div>
-
+      <div class="mb-3">
       <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
       <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button>
-
+      </div>
     </form>
   </div>
 </div>
