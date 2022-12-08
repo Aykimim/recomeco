@@ -14,3 +14,17 @@
 
             </form>
     </div>
+
+
+    <form>
+  <div class="mb-3">
+  <form method="post" action="/cotroladormysql/emailrecuperacao.php" enctype="multipart/form-data" > 
+       
+    <label for="exampleInputEmail1" class="form-label">Digite seu E-Mail:/label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Para enviar o codigo</div>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="reset" value="Cancelar"class="btn btn-primary">Enviar</button>
+</form>

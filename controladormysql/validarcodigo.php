@@ -1,6 +1,6 @@
-?>  
-
 <?php
+$nome= $_POST['nome'];
+
 	$numero = 20;
 	$gera; 
 

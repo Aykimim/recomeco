@@ -1,16 +1,16 @@
 <?php
     if(isset($_POST["button"])) {
-        $foto = $_FILES['foto'];
-        $nome       = $_POST["nome"];
-        $sobrenome       = $_POST["sobrenome"];
-        $nomeexibido  = $_POST["nomeexibido"];
-        $email      = $_POST["email"];
-        $senha      = $_POST["senhacd"];
-        $senhaconf      = $_POST["senhaconf"];
-        $biografia = $_POST['biografia'];
-         $cidade = $_POST['cidade'];
-          $servico = $_POST['servico'];
-         $telefone = $_POST['telefone'];
+        $foto          = $_FILES["foto"];
+        $nome          = $_POST["nome"];
+        $sobrenome     = $_POST["sobrenome"];
+        $nomeexibido   = $_POST["nomeexibido"];
+        $email         = $_POST["email"];
+        $senha         = $_POST["senhacd"];
+        $senhaconf     = $_POST["senhaconf"];
+        $biografia     = $_POST["biografia"];
+        $cidade        = $_POST["cidade"];
+        $servico       = $_POST["servico"];
+        $telefone      = $_POST["telefone"];
         
 
         if($nome == "" || $sobrenome == "" || $email == "" || $senha == "" || $csenha == "") {
