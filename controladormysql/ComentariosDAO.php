@@ -29,5 +29,16 @@ public function delete ($idComentarios){
 $sql = "DELETE FROM Comentario WHERE";
 
 }
-//<a href=service.php?idComentario=<?php echo $comentario->idComentario
+
+public function getAllComentario($Usuario_idUsuario){
+    $sql = "SELECT * FROM comantario WHERE Usuario_idUsuario = :Usuario_idUsuario";
+    $stm = $this->link->prepare($sql);
+    $stm->bindValue(":Usuario_idUsuario", $Usuario_idUsuario);
+    $stm->execute();
+    if ($stm->rowCount()>0){
+        return $stm->fetchAll(PDO::FETCH_OBJ);
+    } else {
+        return null;
+    }
+}
  }

@@ -84,6 +84,17 @@ public function getOne(User $user){
             return null;
         }
     }
+    public function getOneuser($idusuario){
+        $sql = "SELECT * FROM usuario WHERE idusuario = :idusuario";
+        $stm = $this->link->prepare($sql);
+        $stm->bindValue(":idusuario", $idusuario);
+        $stm->execute();
+        if ($stm->rowCount()>0){
+            return $stm->fetchAll(PDO::FETCH_OBJ);
+        } else {
+            return null;
+        }
+    }
 
 }
 
