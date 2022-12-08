@@ -5,7 +5,7 @@
     <div class="mb-3 mt-3"><center><h2>Catastre-se</h2></center></div>
       
     
-    <form name="cadastro" method="post" enctype="multipart/form-data" action=".../pessoamysql/validarlogin.php">
+    <form name="cadastro" method="post" enctype="multipart/form-data" action="..../controladormysql/UsuarioDAO.php">
 
       <div class="mb-3">
         <label for="foto" class="form-label">Foto de perfil:</label>
