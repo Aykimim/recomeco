@@ -18,19 +18,17 @@
 
     <div class="mb-3">
       <label for="senha" class="form-label">senha</label>
-      <input type="senha" name="senha" id="senha" class="form-control" aria-describedby="senha">
+      <input type="senha" name="senha" id="senha" required placeholder="senha" class="form-control" aria-describedby="senha">
     </div>
-
-    <button type="submit" value="entrar" required placeholder="senha" name="entrar" id="entrar" class="btn btn-success">Entrar</button>
+  <a href="recuperarsenha.php">
+    <p> esqueci a senha</p>
+  </a>
+    <button type="submit" value="entrar"  name="entrar" id="entrar" class="btn btn-success">Entrar</button>
 
     </br>
   </form>
 
-  </br>
-  <a href="recuperarsenha.php">
-    <p> esqueci a senha</p>
-  </a>
-  </br>
+
 
 </div>
 <!--fim formulario de login -->

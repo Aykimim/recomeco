@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<div class="mb-3 mt-3">
 <div class ="container min-vh-100">
 	<div class="row">
 		
@@ -11,5 +12,6 @@
 			trabalhadores autônomos.</br>
 		</h5>
 	</div>
+</div>
 </div>
 <?php include 'footer.php'; ?>
