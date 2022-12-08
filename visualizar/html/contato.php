@@ -4,11 +4,13 @@
 </br>
     Autores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .
 </br>
+<p><?php
+echo $_SERVER['server_name'];
+
+?></p>
 <h7> Mestre jedi: Pedro</h7>
 </br>
-<?php
-echo $_SERVER['server_name'];
-?>
+
     <div class="contato">
 
         <img src="/visualizar/img/eykimim.jpg" alt="descrição da imagem" height="200" width="200" vspace="5" hspace="4">
