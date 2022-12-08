@@ -1,6 +1,6 @@
 <?php
 
-class Anunciante{
+class Usuario{
     private $email;
     private $senha;
     private $id_usuario;
