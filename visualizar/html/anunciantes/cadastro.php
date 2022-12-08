@@ -2,11 +2,9 @@
 
 <div class="container">
   <div class="row ">
-    <div class="mb-3 mt-3">
-      <center>
-        <h2>Catastre-se</h2>
-      </center>
-    </div>
+    <div class="mb-3 mt-3"><center><h2>Catastre-se</h2></center></div>
+      
+    
     <form name="cadastro" method="post" enctype="multipart/form-data" action="/cotroladormysql/salvarcadastro.php">
 
       <div class="mb-3">
@@ -71,8 +69,8 @@
       <div class="mb-3">
       <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
       <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button>
-      </div>
-    </form>
+     </form> 
+    </div>
   </div>
 </div>
 <?php include '../footer.php'; ?>

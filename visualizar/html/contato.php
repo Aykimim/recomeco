@@ -3,7 +3,9 @@
 <h5> Contato</br>
 </br>
     Autores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .
-</br></br>
+</br>
+<p> Mentor: Pedro</p>
+</br>
     <div class="contato">
 
         <img src="/visualizar/img/eykimim.jpg" alt="descrição da imagem" height="200" width="200" vspace="5" hspace="4">
