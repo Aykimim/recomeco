@@ -1,7 +1,12 @@
 <?php include '../header.php'; ?>
 <!-- formulario de login -->
-<div class="d-flex justify-content-center footer-content  footer-bottom">
-  <h1>LOGIN</h1></br>
+
+<div class="d-flex justify-content-center footer-content  ">
+<div class="mb-3 mt-3">
+      <center>
+  <h2>LOGIN</h2>
+  </center>
+    </div>
   <form action="/pessoamysql/validarlogin.php" method="post">
 
     </br>
@@ -16,7 +21,7 @@
       <input type="senha" name="senha" id="senha" class="form-control" aria-describedby="senha">
     </div>
 
-    <button type="submit" value="entrar" name="entrar" id="entrar" class="btn btn-success">Entrar</button>
+    <button type="submit" value="entrar" required placeholder="senha" name="entrar" id="entrar" class="btn btn-success">Entrar</button>
 
     </br>
   </form>
