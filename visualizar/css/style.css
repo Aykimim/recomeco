@@ -259,7 +259,7 @@ body {
 
 .formularioContato {
 
-  max-width: 600px;
+  max-width: 250px;
   height: auto;
   float: none;
   margin: auto;
@@ -291,7 +291,7 @@ body {
 
   float: left;
   width: 100%;
-  margin-bottom: 1.2em;
+  margin-bottom: 0px;
 
 }
 
@@ -300,7 +300,7 @@ body {
   width: 100%;
   float: left;
   color: #999;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
   font-family: 'open_sansregular';
 
 }
@@ -479,6 +479,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 1rem 0 1rem 0;
+  padding-left: 1px;
 }
 
 .socials li {
@@ -541,6 +542,7 @@ footer {
 
 .footer-menu ul {
   display: flex;
+  margin-top: 8px;
 }
 
 .footer-menu ul li {
