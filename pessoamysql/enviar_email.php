@@ -1,7 +1,7 @@
 <?php
-$nome= $_POST['nome'];
-$email = $_POST['email'];
-$mensagem= $_POST['mensagem'];
+$nome= filter_input(INPUT_POST,"nome");
+$email = filter_input(INPUT_POST,"email");
+$mensagem= filter_input(INPUT_POST,"mensagem");
 $formcontent="De: $email \nMensagem enviada por: $nome \nReclamação: $mensagem ";
 //$recipient = "kimmim@kimmim.shop";
 //$recipient = "eykimim@hotmail.com";

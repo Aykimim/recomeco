@@ -1,3 +1,4 @@
+<?php include '../header.php'; ?>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
@@ -27,3 +28,5 @@
 <div class="modal-dialog modal-dialog-centered">
   ...
 </div>
+
+<?php include '../footer.php'; ?>

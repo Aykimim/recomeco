@@ -2,7 +2,12 @@
 
 $gera = rand(1,100);
 
+//<<<<<<< HEAD
+
+$email = filter_input(INPUT_POST,"email");
+//=======
 $email = $_POST['email'];
+//>>>>>>> 699538012bc511450113ff47b53acc6e019179c9
 $formcontent="codigo de recuperacao da sua conta: $gera ";
 $recipient = "$email";
 $subject = "mao amiga";

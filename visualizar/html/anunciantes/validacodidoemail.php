@@ -1,3 +1,4 @@
+<?php include '../header.php'; ?>4
 <div class="formularioContato">
 
 	<form method="post" action="/cotroladormysql/emailrecuperacao.php" enctype="multipart/form-data" >
@@ -14,6 +15,9 @@
 
             </form>
     </div>
+//<<<<<<< HEAD
+    
+//=======
 
 
     <form>
@@ -28,3 +32,5 @@
   <button type="submit" class="btn btn-primary">Enviar</button>
   <button type="reset" value="Cancelar"class="btn btn-primary">Enviar</button>
 </form>
+//>>>>>>> 699538012bc511450113ff47b53acc6e019179c9
+<?php include '../footer.php'; ?>

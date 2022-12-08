@@ -24,7 +24,7 @@
         <span id="divBusca">
           <form class="d-flex" role="search">
             <input class="form-control me-2 " type="search" placeholder="Pesquisa" aria-label="Search">
-            <button class="btn btn-outline-success btn-info" type="Buscar">Buscar</button>
+            <button class="btn btn-outline-success btn-info link-dark" type="Buscar">Buscar</button>
           </form>
         </span>
       </div>
