@@ -16,14 +16,12 @@
 
         <div class="mb-3">
           <label for="E-mail" class="form-label">E-mail:</label>
-          <input type="text" name="email" required placeholder="exemplo@hotmil.com" id="email" class="form-control"
-            aria-describedby="nome">
+          <input type="text" name="email" required placeholder="exemplo@hotmil.com" id="email"  aria-describedby="nome">
         </div>
 
         <div class="mb-3">
           <label for="senha" class="form-label">senha</label>
-          <input type="senha" name="senha" id="senha" required placeholder="senha" class="form-control"
-            aria-describedby="senha">
+          <input type="senha" name="senha" id="senha" required placeholder="senha" class="form-control" aria-describedby="senha">
         </div>
 
         <a href="recuperarsenha.php">

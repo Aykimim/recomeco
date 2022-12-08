@@ -4,7 +4,7 @@
 </br>
     Autores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .
 </br>
-<p> Mentor: Pedro</p>
+<h7> Mentor: Pedro</h7>
 </br>
     <div class="contato">
 
