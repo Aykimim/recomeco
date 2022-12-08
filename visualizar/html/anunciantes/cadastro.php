@@ -17,8 +17,8 @@
       </div>
 
       <div class="mb-3">
-        <label for="nomeexibido" class="form-label">Nome exibido:</label>
-        <input type="text" name="usuarios" required placeholder="Nome a ser mostrado" id="nomeexibido" class="form-control aria-describedby="nome">
+        <label for="nomeexibido" class="form-label">Usuario:</label>
+        <input type="text" name="usuario" required placeholder="Usuario" id="nomeexibido" class="form-control aria-describedby="nome">
       </div>
 
 
