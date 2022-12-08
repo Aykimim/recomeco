@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="row ">
-    <div class="mb-3 mt-3"><center><h2>Catastre-se</h2></center></div>
+    <div class="mb-3 mt-3"><center><h2>Cadastre-se</h2></center></div>
       
     
     <form name="cadastro" method="post" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
