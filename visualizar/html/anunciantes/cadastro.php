@@ -21,22 +21,21 @@
 
       <div class="mb-3">
         <label for="nomeexibido" class="form-label">Nome exibido:</label>
-        <input type="text" name="usuarios" required placeholder="Nome a ser mostrado" id="nomeexibido">
+        <input type="text" name="usuarios" required placeholder="Nome a ser mostrado" id="nomeexibido" class="form-control>
       </div>
 
 
       <div class="mb-3">
         <label for="E-mail" class="form-label">E-mail:</label>
-        <input type="text" name="email" required placeholder="E-mail" id="email">
+        <input type="text" name="email" required placeholder="E-mail" id="email" class="form-control>
       </div>
 
       <div class="mb-3">
         <label for="biogragia" class="form-label">biogragia:</label>
-        <input type="text" name="biografia" required placeholder="biografia" id="biografia" rows="3" required
-          placeholder="E-mail" id="biografia">
+        <input type="text" name="biografia" required placeholder="biografia" rows="3" id="biografia" class="form-control>
       </div>
-
-      <select class="form-select" aria-label="cidade:">
+      <label for="cidade" class="form-label">cidade:</label>
+      <select class="form-select" aria-label="cidade">
         <option selected>cidade:</option>
         <option value="Manhuacu">Manhuacu</option>
         <option value="Manhuacu">Manhuacu</option>
@@ -45,14 +44,12 @@
 
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">telefone:</label>
-        <input type="text" name="telefone" required placeholder="telefone" id="telefone" required placeholder="telefone"
-          id="telefone">
+        <input type="text" name="telefone" required placeholder="(00) 0 0000-0000" id="telefone" class="form-control>
       </div>
 
       <div class="mb-3">
         <label for="servico" class="form-label">serviço:</label>
-        <input type="text" name="servico" required placeholder="biografia" id="biografia" rows="3" required
-          placeholder="serviço" id="servico">
+        <input type="text" name="servico" rows="3" required  placeholder="serviço" id="servico" class="form-control>
       </div>
 
 
@@ -74,9 +71,8 @@
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label>
       </div>
 
-      <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar class=" btn btn-primary btn
-        btn-success">Cadastrar</button>
-      <button type="reset" value="Cancelar" class="btn btn-primary btn btn-danger">Cancelar</button>
+      <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
+      <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button>
 
     </form>
   </div>
