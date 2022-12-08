@@ -5,7 +5,7 @@
 	<div id="cadastro">
     	<form name="cadastro" method="post" enctype="multipart/form-data" action="/cotroladormysql/salvarcadastro.php">
     		<table id="tab_cadastro">
-</br>
+
             	<tr>    
                     <td>Foto de perfil:</td>
                     <td><input type="file" name="foto" required placeholder="Foto de Perfil" id="foto" class="txt" /></td>
@@ -65,13 +65,12 @@
                     <td>Confirmar Senha:</td> 
                     <td> <input type="password" name="senhaconf" required placeholder="Confirmar Senha" id="senhacd" class="txt" /></td>
                 </tr>
-                </br>
+                
                 <tr>    
                     <td colspan="2"><input type="submit" value="Cadastrar" name="cadastrar" id="botao_cad"></td>
                     <td colspan="2"><input type="reset" value="Cancelar"></td>
                 </tr>
-                </br>
-            </br>
+                
             </table>
         </form>
     </div>

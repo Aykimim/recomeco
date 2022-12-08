@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 <div class ="container min-vh-100">
-	<div class="row margin-top: calc(2 * var(--bs-gutter-x));">
-        
+	<div class="row ">
+   <!-- margin-top: calc(2 * var(--bs-gutter-x));-->
     </br></br></br>
 <h5>Aviso do site ao (a) visitante:</br></br>
 

@@ -80,15 +80,11 @@ h1 {
   font-style: open sans;
 }
 
-/*fonte do texto grande do site
-h2 {
-  color: rgb(0, 0, 0);
-  text-align: left;
-  font-size: 30px;
-  font-style: open sans;
-  font-weight: bold;
 
-}*/
+h2 {
+ margin-top: 10;
+
+}
 
 /*fonte do botoes de atalho provisorio*/
 h4 {
@@ -258,7 +254,7 @@ body {
 /*formulario DE CONTATO*/
 
 .formularioContato {
-
+  border-collapse: initial;
   max-width: 250px;
   height: auto;
   float: none;
@@ -416,7 +412,7 @@ tr {
   height: 250px;
   margin: 0 auto;
   padding: 10px;
-  margin-top: 200px;
+  margin-top: 10px;
 }
 
 input#botao_cad {
