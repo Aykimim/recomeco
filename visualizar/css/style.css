@@ -136,7 +136,7 @@ login {
   background: url() no-repeat;
   background-size: cover;
 }
-
+label
 .login-box {
   width: 280px;
   position: absolute;
@@ -366,7 +366,7 @@ body {
   display: block;
   margin: auto;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 30px;
   border: 0;
   padding: 0.8em 0em;
   color: #fff;
