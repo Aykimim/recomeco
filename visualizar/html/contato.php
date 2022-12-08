@@ -3,16 +3,16 @@
 <h5> Contato</br>
 </br>
     Autores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .
-</br>
+</br></br>
     <div class="contato">
 
         <img src="/visualizar/img/eykimim.jpg" alt="descrição da imagem" height="200" width="200" vspace="5" hspace="4">
 
         <img src="/visualizar/img/yasmim.jpg" alt="descrição da imagem" height="200" width="200" vspace="5" hspace="4">
 
-    </div>
+    </div></br>
 
-    Para entrar em contato preencher o formulario</br>
+    Para entrar em contato preencher o formulario:</br>
 </h5>
 
 <div class="formularioContato">
@@ -35,13 +35,13 @@
 
         <input type="submit" name="acao" value="Enviar">
         <input type="reset" value="Cancelar">
-        <!--bolinha roda-->
+        <!--bolinha roda
         <div class="spinner-border text-secondary" role="status">
-  <span class="visually-hidden">Loading...</span>
+  <span class="visually-hidden">Loading...</span>-->
   
-        //configurar
+   <!--     //configurar
  <div id="liveAlertPlaceholder"></div>
 <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
     </form>
-</div>
+</div>-->
 <?php include 'footer.php'; ?>

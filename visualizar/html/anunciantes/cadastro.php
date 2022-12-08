@@ -1,5 +1,7 @@
 <?php include '../header.php'; ?>
 
+<center><h2>Catastre-se</h2></center>
+
 	<div id="cadastro">
     	<form name="cadastro" method="post" enctype="multipart/form-data" action="/cotroladormysql/salvarcadastro.php">
     		<table id="tab_cadastro">
@@ -66,7 +68,10 @@
                 </br>
                 <tr>    
                     <td colspan="2"><input type="submit" value="Cadastrar" name="cadastrar" id="botao_cad"></td>
+                    <td colspan="2"><input type="reset" value="Cancelar"></td>
                 </tr>
+                </br>
+            </br>
             </table>
         </form>
     </div>
