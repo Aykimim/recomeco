@@ -15,24 +15,23 @@
       </div>
       <div class="mb-3">
         <label for="nome" class="form-label">Nome:</label>
-        <input type="text" name="nome" required placeholder="Nome" id="nome" class="form-control"
-          aria-describedby="nome">
+        <input type="text" name="nome" required placeholder="Nome" id="nome" class="form-control" aria-describedby="nome">
       </div>
 
       <div class="mb-3">
         <label for="nomeexibido" class="form-label">Nome exibido:</label>
-        <input type="text" name="usuarios" required placeholder="Nome a ser mostrado" id="nomeexibido" class="form-control>
+        <input type="text" name="usuarios" required placeholder="Nome a ser mostrado" id="nomeexibido" class="form-control aria-describedby="nome">
       </div>
 
 
       <div class="mb-3">
         <label for="E-mail" class="form-label">E-mail:</label>
-        <input type="text" name="email" required placeholder="E-mail" id="email" class="form-control>
+        <input type="text" name="email" required placeholder="exemplo@hotmil.com" id="email" class="form-control" aria-describedby="nome">
       </div>
 
       <div class="mb-3">
         <label for="biogragia" class="form-label">biogragia:</label>
-        <input type="text" name="biografia" required placeholder="biografia" rows="3" id="biografia" class="form-control>
+        <input type="text" name="biografia" required placeholder="biografia" rows="3" id="biografia" class="form-control" aria-describedby="nome">
       </div>
       <label for="cidade" class="form-label">cidade:</label>
       <select class="form-select" aria-label="cidade">
@@ -44,12 +43,12 @@
 
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">telefone:</label>
-        <input type="text" name="telefone" required placeholder="(00) 0 0000-0000" id="telefone" class="form-control>
+        <input type="text" name="telefone" required placeholder="(00) 0 0000-0000" id="telefone" class="form-control" aria-describedby="nome">
       </div>
 
       <div class="mb-3">
         <label for="servico" class="form-label">serviço:</label>
-        <input type="text" name="servico" rows="3" required  placeholder="serviço" id="servico" class="form-control>
+        <input type="text" name="servico" rows="3" required  placeholder="serviço" id="servico" class="form-control" aria-describedby="nome">
       </div>
 
 
@@ -62,8 +61,7 @@
 
       <div class="mb-3">
         <label for="senha" class="form-label">Confirmar Senha</label>
-        <input type="password" name="senhaconf" required placeholder="Confirmar Senha" id="senhaconf"
-          class="form-control" aria-describedby="senha">
+        <input type="password" name="senhaconf" required placeholder="Confirmar Senha" id="senhaconf" class="form-control" aria-describedby="senha">
       </div>
 
       <div class="mb-3 form-check">
