@@ -25,11 +25,11 @@
         </div>
 
         <a href="recuperarsenha.php">
-          <p> esqueci a senha</p>
+          <h7> esqueci a senha</h7>
         </a>
-
+        <div class="mb-3 mt-3">
         <button type="submit" value="entrar" name="entrar" id="entrar" class="btn btn-success">Entrar</button>
-
+</div>
 
       </form>
 
