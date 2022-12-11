@@ -2,11 +2,15 @@
 
 <div class="container">
   <div class="row ">
-    <div class="mb-3 mt-3"><center><h2>Cadastre-se</h2></center></div>
-      
-    
-    <form name="cadastro" method="post" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
+    <div class="mb-3 mt-3">
+      <center>
+        <h2>Cadastre-se</h2>
+      </center>
+    </div>
 
+
+    <form name="cadastro" method="post" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
+ 
       <div class="mb-3">
         <label for="foto" class="form-label">Foto de perfil:</label>
         <input type="file" name="foto" required placeholder="Foto" id="foto" class="form-control">
@@ -18,7 +22,7 @@
 
       <div class="mb-3">
         <label for="nomeexibido" class="form-label">Usuario:</label>
-        <input type="text" name="usuario" required placeholder="Usuario" id="nomeexibido" class="form-control aria-describedby="nome">
+        <input type="text" name="usuario" required placeholder="Usuario" id="nomeexibido" class="form-control aria-describedby=" nome">
       </div>
 
 
@@ -46,7 +50,7 @@
 
       <div class="mb-3">
         <label for="servico" class="form-label">serviço:</label>
-        <input type="text" name="servico" rows="3" required  placeholder="serviço" id="servico" class="form-control" aria-describedby="nome">
+        <input type="text" name="servico" rows="3" required placeholder="serviço" id="servico" class="form-control" aria-describedby="nome">
       </div>
 
 
@@ -67,10 +71,10 @@
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label>
       </div>
       <div class="mb-3">
-      <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
-      <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button>
-     </form> 
-    </div>
+        <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
+        <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button>
+    </form>
   </div>
+</div>
 </div>
 <?php include '../footer.php'; ?>
