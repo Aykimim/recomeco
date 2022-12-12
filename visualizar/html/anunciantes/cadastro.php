@@ -56,7 +56,7 @@
 
       <div class="mb-3">
         <label for="senha" class="form-label">senha</label>
-        <input type="senha" name="senha" id="senha" class="form-control" aria-describedby="senha">
+        <input type="password" name="senha" id="senha" class="form-control" aria-describedby="senha">
         <div id="senha" class="form-text"> Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve
           conter espaços, caracteres especiais ou emoji. </div>
       </div>
