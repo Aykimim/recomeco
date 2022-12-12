@@ -48,7 +48,7 @@ class UsuarioDAO
 
     public function doLogin(Usuario $user)
     {
-        $sql = "SELECT * FROM Usuario WHERE email = :email AND senha = :senha";
+        $sql = "SELECT * FROM Usuario WHERE usuario = :usuario AND senha = :senha";
         $stm = $this->link->prepare($sql);
         $stm->bindValue(":usuario", $user->getUsuario());
         $stm->bindValue(":senha", $user->getSenha());
