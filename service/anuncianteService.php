@@ -18,7 +18,7 @@ $fotoPerfil = filter_input(INPUT_POST, "fotoPerfil");
 //olha eu daqui
 $senhaconf = filter_input(INPUT_POST, "senhaconf");
 if ($senha != $senhaconf) {
-    echo "senha nao confere";
+    header("location:" . $_SERVER['DOCUMENT_ROOT'] . "/visualizar/html/anunciantes/cadastro.php?senhanaoconf=true");
 } else {
     //ate aqui
 
@@ -88,10 +88,6 @@ if ($senha != $senhaconf) {
                 $user->setIdUsuario(null);
                 try {
                     if ($usuarioDAO->create($user)) {
-
-
-
-
                         header("location:" . $_SERVER['DOCUMENT_ROOT'] . "/visualizar/html/anunciantes/login.php?cadastro=true");
                     } else {
                         header("location:" . $_SERVER['DOCUMENT_ROOT'] . "/visualizar/html/anunciantes/cadastro.php?falha=true");

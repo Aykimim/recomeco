@@ -1,8 +1,9 @@
 <?php include '../header.php'; ?>
 
 <?php
+//olha eu daqui
 $falha = filter_input(INPUT_GET, "falha");
-
+$senhanaoconf = filter_input(INPUT_GET, "senhanaoconf");
 
 if (isset($falha)) { ?>
 
@@ -11,8 +12,18 @@ if (isset($falha)) { ?>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
+<?php }
+
+if (isset($senhanaoconf)) { ?>
+
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Senha não confere</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
 <?php } ?>
 
+//ate aqui
 <div class="container">
   <div class="row ">
     <div class="mb-3 mt-3">
