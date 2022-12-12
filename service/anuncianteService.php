@@ -27,7 +27,7 @@ $usuarioDAO = new UsuarioDAO();
 if ($action == "cadastrar"){
     echo "Construi";
     
-    // Recupera os dados dos campos
+    /*// Recupera os dados dos campos
     $foto = $_FILES["foto"];
     
     // Se a foto estiver sido selecionada
@@ -80,5 +80,5 @@ if ($action == "cadastrar"){
                 echo "Usuario Criado com sucesso";
             }
         }
-    }
+    }*/
 }
