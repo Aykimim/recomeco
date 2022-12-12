@@ -57,7 +57,7 @@ if (isset($senhanaoconf)) { ?>
       </div>
 
       <div class="mb-3">
-        <label for="biogragia" class="form-label">biografia:</label>
+        <label for="biografia" class="form-label">biografia:</label>
         <input type="text" name="biografia" required placeholder="biografia" rows="3" id="biografia" class="form-control" aria-describedby="nome">
       </div>
 
