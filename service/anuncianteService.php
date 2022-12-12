@@ -1,20 +1,24 @@
 <?php
 
-include_once "../model/Aluno.php";
-include_once "../controller/AlunoDAO.php";
+include_once "//kimmim.shop/controladormysql\FotoDAO.php";
+include_once "//kimmim.shop/controladormysql\UsuarioDAO.php";
+$id_usuario = filter_input(INPUT_POST,"id_usuario");
+$nome = filter_input(INPUT_POST,"nome");
+$usuario = filter_input(INPUT_POST,"usuario");
+$email = filter_input(INPUT_POST,"email");
+$biografia= filter_input(INPUT_POST,"biografia");
+$cidade = filter_input(INPUT_POST,"cidade");
+$telefone = filter_input(INPUT_POST,"telefone");
+$servico = filter_input(INPUT_POST,"servico");
+$senha = filter_input(INPUT_POST,"senha");
+$action =  filter_input(INPUT_POST,"action");
 
-$usuario = filter_input(INPUT_GET,"usuario");
-$email = filter_input(INPUT_GET,"email");
-$senha = filter_input(INPUT_GET,"senha");
-$id_usuario = filter_input(INPUT_GET,"id_usuario");
-$nome = filter_input(INPUT_GET,"nome");
-$biografia= filter_input(INPUT_GET,"biografia");
-$cidade = filter_input(INPUT_GET,"cidade");
-$telefone = filter_input(INPUT_GET,"telefone");
-$servico = filter_input(INPUT_GET,"servico");
+$user = new Usuario($usuario,$email,$senha,$id_usuario,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
+$usuarioDAO = new UsuarioDAO;
 
 // Se o usuário clicou no botão cadastrar efetua as ações
-if (isset($_POST['cadastrar'])) {
+//if (isset($_POST['cadastrar'])) {
+if ($action == "cadastrar"){
     
     // Recupera os dados dos campos
     $foto = $_FILES["foto"];
@@ -62,18 +66,12 @@ if (isset($_POST['cadastrar'])) {
             // Faz o upload da imagem para seu respectivo caminho
             move_uploaded_file($foto["tmp_name"], $caminho_imagem);
         
-        
+            //Salva a foto no perfil de usuario;
+            $user->setFotoPerfil($caminho_imagem);
+            $user->setIdUsuario(null);
+            if($userDAO->create($user)){
+                echo "Usuario Criado com sucesso";
+            }
         }
-    }
-}
-
-$user = new Usuario ($usuario,$email,$senha,$id_usuario,$nome,$biografia,$cidade,$telefone,$servico,$caminho_image);
-$userDAO = new UsuarioDAO();
-
-if ($action=="matricular"){
-    if($userDAO->createMatricula($user)){
-        echo "Cadastrado";
-    } else {
-        echo "Erro";
     }
 }

@@ -2,9 +2,9 @@
 </br>
 <h5> Contato</br>
 </br>
-    Autores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .
+    Desenvolvedores: Eykimim Aniceto Pereira & YASMIM DUTRA COIMBRA .
 </br>
-<h7> Mestre jedi: Pedro</h7>
+<!--<h7> Mestre jedi: Pedro</h7>-->
 </br>
 
     <div class="contato">

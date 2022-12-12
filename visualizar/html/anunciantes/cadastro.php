@@ -10,7 +10,7 @@
 
 
     <form name="cadastro" method="post" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
- 
+
       <div class="mb-3">
         <label for="foto" class="form-label">Foto de perfil:</label>
         <input type="file" name="foto" required placeholder="Foto" id="foto" class="form-control">
@@ -22,7 +22,7 @@
 
       <div class="mb-3">
         <label for="nomeexibido" class="form-label">Usuario:</label>
-        <input type="text" name="usuario" required placeholder="Usuario" id="nomeexibido" class="form-control aria-describedby=" nome">
+        <input type="text" name="usuario" required placeholder="Usuario" id="usuario" class="form-control aria-describedby=" nome">
       </div>
 
 
@@ -36,7 +36,7 @@
         <input type="text" name="biografia" required placeholder="biografia" rows="3" id="biografia" class="form-control" aria-describedby="nome">
       </div>
       <label for="cidade" class="form-label">cidade:</label>
-      <select class="form-select" aria-label="cidade">
+      <select class="form-select" aria-label="cidade" name="cidade" id="cidade">
         <option selected>cidade:</option>
         <option value="Manhuacu">Manhuacu</option>
         <option value="Manhuacu">Manhuacu</option>
@@ -71,8 +71,10 @@
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label>
       </div>
       <div class="mb-3">
+        <input type="text" name="action" id="action" value="cadastrar" hidden>
         <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
-        <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button>
+        
+        <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button><!-- colocar o cancelar do lado do cadastrar e uma ideia muito boa -->
     </form>
   </div>
 </div>
