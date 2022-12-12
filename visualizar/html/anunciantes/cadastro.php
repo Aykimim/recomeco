@@ -1,5 +1,18 @@
 <?php include '../header.php'; ?>
 
+<?php
+$falha = filter_input(INPUT_GET, "falha");
+
+
+if (isset($falha)) { ?>
+
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Falha!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+<?php } ?>
+
 <div class="container">
   <div class="row ">
     <div class="mb-3 mt-3">
@@ -74,7 +87,7 @@
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label> -->
         <label for="termosaceito" class="form-label">Escreva "Aceito" para aceitar termos e condições</label>
         <input type="text" required placeholder="Aceito" id="ternos">
-        
+
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           TERMOS E CONDIÇÕES

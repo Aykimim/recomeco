@@ -1,11 +1,17 @@
 <?php include 'header.php'; ?>
 <!-- Conteúdo -->
-<html>
+<div class="mb-3 mt-3">
+	<div class="container min-vh-100">
+		<div class="row">
+			<html>
 
-<h5>
-	Em Construção ou Manutenção
-</h5>
+			<h5>
+				Em Construção ou Manutenção
+			</h5>
 
-</html>
+			</html>
+		</div>
+	</div>
+</div>
 <!-- fim Conteúdo -->
 <?php include 'footer.php'; ?>

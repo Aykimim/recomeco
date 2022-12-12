@@ -1,6 +1,20 @@
 <?php include '../header.php'; ?>
 <!-- formulario de login -->
 
+<?php
+$cadastro = filter_input(INPUT_GET, "cadastro");
+
+
+if (isset($cadastro)) { ?>
+
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Cadastro realizado com Sucesso!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+<?php } ?>
+
+
 <div class="d-flex justify-content-center footer-content">
   <div class="container">
     <div class="row ">
@@ -11,7 +25,7 @@
         </center>
       </div>
 
-      <form action="/pessoamysql/validarlogin.php" method="post">
+      <form action="//kimmim.shop/service/validarLoginService.php" method="post">
 
 
         <div class="mb-3">
@@ -21,15 +35,15 @@
 
         <div class="mb-3">
           <label for="senha" class="form-label">senha:</label>
-          <input type="senha" name="senha" id="senha" required placeholder="senha"  aria-describedby="senha">
+          <input type="senha" name="senha" id="senha" required placeholder="senha" aria-describedby="senha">
         </div>
 
         <a href="recuperarsenha.php">
           <h7> esqueci a senha</h7>
         </a>
         <div class="mb-3 mt-3">
-        <button type="submit" value="entrar" name="entrar" id="entrar" class="btn btn-success">Entrar</button>
-</div>
+          <button type="submit" value="entrar" name="entrar" id="entrar" class="btn btn-success">Entrar</button>
+        </div>
 
       </form>
 

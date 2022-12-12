@@ -6,7 +6,8 @@
   <title>Mao amiga</title>
   <style rel='stylesheet' type='text/css'>
   </style>
-  <link rel="icon" type="imagem/png" href="//kimmim.shop/visualizar/img/logoiconsemfundo.png">
+  
+  <link rel="icon" type="imagem/png" href="Fvisualizar/img/logoiconsemfundo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	

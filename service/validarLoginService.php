@@ -1,12 +1,12 @@
 <!-- Carregar as sessões para a memória... -->
- <?php include('conecao.php'); ?>
- 
- <?php
-if(isset($_POST['email']) || isset($_POST['senha'])) {
+<?php include('conecao.php'); ?>
 
-    if(strlen($_POST['email']) == 0) {
+<?php
+if (isset($_POST['email']) || isset($_POST['senha'])) {
+
+    if (strlen($_POST['email']) == 0) {
         echo "Preencha seu e-mail";
-    } else if(strlen($_POST['senha']) == 0) {
+    } else if (strlen($_POST['senha']) == 0) {
         echo "Preencha sua senha";
     } else {
 
@@ -18,24 +18,21 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
         $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 1) {
-            
+        if ($quantidade == 1) {
+
             $usuario = $sql_query->fetch_assoc();
 
-            if(!isset($_SESSION)) {
+            if (!isset($_SESSION)) {
                 session_start();
             }
 
             $_SESSION['id_usuario'] = $usuario['id_usuario'];
-        
+
 
             header("Location: index.php");
-
         } else {
             echo "Falha ao logar! E-mail ou senha incorretos";
         }
-
     }
-
 }
 ?>

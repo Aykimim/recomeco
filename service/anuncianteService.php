@@ -20,9 +20,9 @@ $senhaconf = filter_input(INPUT_POST, "senhaconf");
 if ($senha != $senhaconf) {
     echo "senha nao confere";
 } else {
-//ate aqui
+    //ate aqui
 
-    
+
 
     if (isset($id_usuario)) {
         $user = new Usuario($usuario, $email, $senha, $id_usuario, $nome, $biografia, $cidade, $telefone, $servico, $fotoPerfil);
@@ -35,7 +35,7 @@ if ($senha != $senhaconf) {
     // Se o usuário clicou no botão cadastrar efetua as ações
     //if (isset($_POST['cadastrar'])) {
     if ($action == "cadastrar") {
-        echo "Construi";
+        // echo "Construi";
 
         // Recupera os dados dos campos
         $foto = $_FILES["foto"];
@@ -88,9 +88,13 @@ if ($senha != $senhaconf) {
                 $user->setIdUsuario(null);
                 try {
                     if ($usuarioDAO->create($user)) {
-                        echo "Usuario Criado com sucesso";
+
+
+
+
+                        header("location:" . $_SERVER['DOCUMENT_ROOT'] . "/visualizar/html/anunciantes/login.php?cadastro=true");
                     } else {
-                        echo "Deu ruim";
+                        header("location:" . $_SERVER['DOCUMENT_ROOT'] . "/visualizar/html/anunciantes/cadastro.php?falha=true");
                     }
                 } catch (PDOException $e) {
                     echo "Deu ruim no try";
