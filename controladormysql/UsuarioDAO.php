@@ -1,7 +1,7 @@
 <?php
 include_once 'UniversalConnect.php';
 
-include_once "//kimmim.shop/models/Usuario.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/models/Usuario.php";
 
 class UsuarioDAO
 {

@@ -3,21 +3,22 @@
 include_once $_SERVER['DOCUMENT_ROOT'] . "/models/Usuario.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/controladormysql/UsuarioDAO.php";
 
-$id_usuario = filter_input(INPUT_GET,"id_usuario");
-$nome = filter_input(INPUT_GET,"nome");
-$usuario = filter_input(INPUT_GET,"usuario");
-$email = filter_input(INPUT_GET,"email");
-$biografia= filter_input(INPUT_GET,"biografia");
-$cidade = filter_input(INPUT_GET,"cidade");
-$telefone = filter_input(INPUT_GET,"telefone");
-$servico = filter_input(INPUT_GET,"servico");
-$senha = filter_input(INPUT_GET,"senha");
-$action =  filter_input(INPUT_GET,"action");
+$id_usuario = filter_input(INPUT_POST,"id_usuario");
+$nome = filter_input(INPUT_POST,"nome");
+$usuario = filter_input(INPUT_POST,"usuario");
+$email = filter_input(INPUT_POST,"email");
+$biografia= filter_input(INPUT_POST,"biografia");
+$cidade = filter_input(INPUT_POST,"cidade");
+$telefone = filter_input(INPUT_POST,"telefone");
+$servico = filter_input(INPUT_POST,"servico");
+$senha = filter_input(INPUT_POST,"senha");
+$action =  filter_input(INPUT_POST,"action");
+$fotoPerfil = filter_input(INPUT_POST,"fotoPerfil");
 
 if(isset($id_usuario)){
     $user = new Usuario($usuario,$email,$senha,$id_usuario,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
 } else {
-    $user = new Usuario($usuario,$email,$senha,null,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
+    $user = new Usuario($usuario,$email,$senha,null,$nome,$biografia,$cidade,$telefone,$servico,null);
 }
 
 $usuarioDAO = new UsuarioDAO();
@@ -27,7 +28,7 @@ $usuarioDAO = new UsuarioDAO();
 if ($action == "cadastrar"){
     echo "Construi";
     
-    /*// Recupera os dados dos campos
+    // Recupera os dados dos campos
     $foto = $_FILES["foto"];
     
     // Se a foto estiver sido selecionada
@@ -78,7 +79,9 @@ if ($action == "cadastrar"){
             $user->setIdUsuario(null);
             if($userDAO->create($user)){
                 echo "Usuario Criado com sucesso";
+            } else {
+                echo "Deu ruim";
             }
         }
-    }*/
+    }
 }
