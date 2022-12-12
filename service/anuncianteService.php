@@ -79,12 +79,14 @@ if ($senha != $senhaconf) {
                 // Gera um nome único para a imagem
                 $nome_imagem = md5(uniqid(time())) . "." . $ext[1];
                 // Caminho de onde ficará a imagem
-                $caminho_imagem = $_SERVER['DOCUMENT_ROOT'] . "/visualizar/img/fotosDosUsuario/" . $nome_imagem . $id_usuario;
+                
+                $caminho_imagem = $_SERVER['DOCUMENT_ROOT'] . "/visualizar/img/fotosDosUsuario/";
                 // Faz o upload da imagem para seu respectivo caminho
                 move_uploaded_file($foto["tmp_name"], $caminho_imagem);
 
                 //Salva a foto no perfil de usuario;
-                $user->setFotoPerfil($caminho_imagem);
+                //$user->setFotoPerfil($caminho_imagem);
+                $user->setFotoPerfil($_SERVER['SERVER_NAME']."/visualizar/img/fotosDosUsuario/".$nome_imagem);
                 $user->setIdUsuario(null);
                 try {
                     if ($usuarioDAO->create($user)) {

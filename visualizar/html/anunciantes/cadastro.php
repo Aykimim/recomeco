@@ -21,7 +21,8 @@ if (isset($senhanaoconf)) { ?>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
-<?php } //ate aqui?>
+<?php } //ate aqui
+?>
 
 
 <div class="container">
@@ -59,10 +60,10 @@ if (isset($senhanaoconf)) { ?>
         <label for="biogragia" class="form-label">biografia:</label>
         <input type="text" name="biografia" required placeholder="biografia" rows="3" id="biografia" class="form-control" aria-describedby="nome">
       </div>
-      
+
       <label for="cidade" class="form-label">cidade:</label>
       <select class="form-select" aria-label="cidade" name="cidade" id="cidade">
-        <option selected>cidade:</option>
+        
         <option value="Manhuacu">Manhuacu</option>
         <option value="Manhumirim">Manhumirim</option>
         <option value="Simonesia">Simonesia</option>
@@ -97,14 +98,15 @@ if (isset($senhanaoconf)) { ?>
       <div class="mb-3 form-check">
         <!--<input type="checkbox" class="form-check-input" id="ternos">
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label> -->
+
+        <label for="termosaceito" class="form-label">Escreva "Aceito" para aceitar termos e condições:</label>
+        <input type="text" required placeholder="Aceito" id="ternos"></br>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           TERMOS E CONDIÇÕES
         </button>
-        <label for="termosaceito" class="form-label">Escreva "Aceito" para aceitar termos e condições:</label></br>
-        <input type="text" required placeholder="Aceito" id="ternos">
 
         <!-- Button trigger modal -->
-        
+
         <!--cabo olha eu-->
       </div>
 

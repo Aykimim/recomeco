@@ -1,31 +1,31 @@
 <?php include 'header.php'; ?>
-<?php echo 'oi'?>
 <?php
-
-$cidade = filter_input(INPUT_GET,"cidade");
+include_once $_SERVER['DOCUMENT_ROOT'] . "/controladormysql/UsuarioDAO.php";
+$cidade = filter_input(INPUT_GET, "cidade");
 
 $usuarioDAO = new UsuarioDAO();
 
-$result = $usuarioDAO->getAllCity($cidade);
+$result=$usuarioDAO->getAllCity($cidade);
 
-print_r($result);
 ?>
 
-<?php 
-foreach($result as $user){?>
+<?php
+foreach ($result as $user) { ?>
 
-<div class="card" style="width: 18rem;">
-  <img src="$user->fotoPerfil" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $user->nome ?></h5>
-
-    <p class="card-text"><?php echo $user->servico?></p>
-    <a href="#" class="btn btn-primary">ver</a>
+  <div class="card" style="width: 18rem;">
+    <img src="https://<?php echo $user->fotoPerfil ?>" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><?php echo $user->nome ?></h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Serviço: <?php echo $user->servico ?></li>
+        <li class="list-group-item">Telefone: <?php echo $user->telefone ?></li>
+        <?php echo $_SERVER['SERVER_NAME']  ?>
+      </ul>
+      <a href="#" class="btn btn-primary">ver</a>
+    </div>
   </div>
-</div>
 <?php } ?>
 
 <!-- roda pe -->
 
 <?php include 'footer.php'; ?>
-
