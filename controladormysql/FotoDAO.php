@@ -14,7 +14,7 @@ include_once "./models/Foto.php";
         $sql = "INSERT INTO Foto (url,Usuario_idUsuario) values (:url, :Usuario_idUsuario)";
         $stm = $this->link->prepare($sql);
         $stm->bindValue(":url",$user->geturl());
-        $stm->bindValue(":Usuario_idUsuario",$user->getUsuario_idUsuario());
+        $stm->bindValue(":Usuario_idUsuario",$user->getIdUsuario());
         if($stm->execute()){
             return true;
         } else {

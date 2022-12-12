@@ -9,19 +9,13 @@ $url = filter_input(INPUT_POST,"url");
 
 $foto = new Foto(null,$url,$Usuario_idUsuario);
 
-$fotoDAO = new UsuarioDAO();
-$fotos = $fotoDAO->show();
+$fotoDAO = new FotoDAO();
+$fotos = $fotoDAO->show($Usuario_idUsuario);
 
 if ($action=="adicionar"){
-    if($fotoDAO->creat($foto)){
+    if($fotoDAO->create($Usuario_idUsuario)){
         echo "Cadastrado";
     } else {
         echo "Erro";
     }
 }
-
-?>
-<?php
-
-
-?>
