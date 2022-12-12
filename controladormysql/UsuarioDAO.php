@@ -48,7 +48,7 @@ class UsuarioDAO
 
     public function doLogin(Usuario $user)
     {
-        $sql = "SELECT * FROM Usuario WHERE usuario = :usuario AND senha = :senha";
+        $sql = "SELECT * FROM Usuario WHERE email = :email AND senha = :senha";
         $stm = $this->link->prepare($sql);
         $stm->bindValue(":usuario", $user->getUsuario());
         $stm->bindValue(":senha", $user->getSenha());
@@ -60,12 +60,11 @@ class UsuarioDAO
         }
     }
 
-    /*public function getOne(Usuario $user)
+    public function getOne($idUsuario)
     {
-        $sql = "SELECT * FROM tbUser WHERE usuario = :usuario AND senha AND senha = :senha";
+        $sql = "SELECT * FROM Usuario WHERE idUsuario = :idUsuario";
         $stm = $this->link->prepare($sql);
-        $stm->bindValue(":usuario ", $user->getUsuario());
-        $stm->bindValue(":senha", $user->getSenha());
+        $stm->bindValue(":idUsuario", $idUsuario);
         $stm->execute();
         if ($stm->rowCount() > 0) {
             $temp = $stm->fetchAll(PDO::FETCH_OBJ);
@@ -75,7 +74,7 @@ class UsuarioDAO
         } else {
             return null;
         }
-    }*/
+    }
 
     public function getAllCity($cidade)
     {

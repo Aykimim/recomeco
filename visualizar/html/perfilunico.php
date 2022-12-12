@@ -1,43 +1,45 @@
+<?php include 'header.php'; ?>
 <?php
+include_once $_SERVER['DOCUMENT_ROOT'] . "/controladormysql/UsuarioDAO.php";
 
-$usuario = filter_input(INPUT_GET,"usuario");
-$usuarioDAO = new UsuarioDAO();
-$resultuser = usuarioDAO->getoneuser($usuario);
+$idUsuario = filter_input(INPUT_GET, "idUsuario");
 
-$comentarios = filter_input(INPUT_GET,"comentario");
 $usuarioDAO = new UsuarioDAO();
-$resultcoment = ComentariosDAO->getAllComentario($Usuario_idUsuario);
+
+if(isset($idUsuario)){
+  $user = $usuarioDAO->getOne($idUsuario);
+}
 
 ?>
 
-<?php 
 
-foreach($resultuser as $user){?>
-<div class="card" style="width: 18rem;">
-  <img src="$user->fotoPerfil" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">$user->nome</h5>
+<div class="container">
+  <div class="row">
 
-    <p class="card-text">$user->servico</p>
-    <a href="#" class="btn btn-primary">ver</a>
+
+
+      <div class="card mb-3">
+        <img src="<?php echo $user->fotoPerfil ?>" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $user->nome ?></h5>
+
+
+          <li class="list-group-item">Serviço: <?php echo $user->servico ?></li>
+          <li class="list-group-item">Telefone: <?php echo $user->biografia ?></li>
+          <li class="list-group-item">Serviço: <?php echo $user->email ?></li>
+          <li class="list-group-item">Telefone: <?php echo $user->telefone ?></li>
+
+
+        </div>
+      </div>
+
+
+
+
   </div>
 </div>
 
 
+<!-- roda pe -->
 
-<?php } ?>
-
-<?php 
-foreach($resultcoment as $user){?>
-<div class="card" style="width: 18rem;">
-  <img src="$user->fotoPerfil" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">$user->nome</h5>
-
-    <p class="card-text">$user->comentarios</p>
-    <a href="#" class="btn btn-primary">ver</a>
-  </div>
-</div>
-
-
-<?php } ?>
+<?php include 'footer.php'; ?>
