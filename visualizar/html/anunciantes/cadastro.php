@@ -11,10 +11,10 @@
 
     <form name="cadastro" method="get" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
 
-      <div class="mb-3">
+      <!--<div class="mb-3">
         <label for="foto" class="form-label">Foto de perfil:</label>
         <input type="file" name="foto" required placeholder="Foto" id="foto" class="form-control">
-      </div>
+      </div>-->
       <div class="mb-3">
         <label for="nome" class="form-label">Nome:</label>
         <input type="text" name="nome" required placeholder="Nome" id="nome" class="form-control" aria-describedby="nome">
@@ -61,7 +61,7 @@
           conter espaços, caracteres especiais ou emoji. </div>
       </div>
 
-      <div class="mb-3">
+<!--<div class="mb-3">
         <label for="senha" class="form-label">Confirmar Senha</label>
         <input type="password" name="senhaconf" required placeholder="Confirmar Senha" id="senhaconf" class="form-control" aria-describedby="senha">
       </div>
@@ -69,7 +69,7 @@
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="ternos">
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label>
-      </div>
+      </div>-->
       <div class="mb-3">
         <input type="text" name="action" id="action" value="cadastrar" hidden>
         <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
