@@ -22,7 +22,7 @@
 
       <div class="mb-3">
         <label for="nomeexibido" class="form-label">Usuario:</label>
-        <input type="text" name="usuario" required placeholder="Usuario" id="usuario" class="form-control aria-describedby=" nome">
+        <input type="text" name="usuario" required placeholder="Usuario" id="usuario" class="form-control" aria-describedby="nome">
       </div>
 
 
@@ -39,7 +39,7 @@
       <select class="form-select" aria-label="cidade" name="cidade" id="cidade">
         <option selected>cidade:</option>
         <option value="Manhuacu">Manhuacu</option>
-        <option value="Manhumirim">Manhumirin</option>
+        <option value="Manhumirim">Manhumirim</option>
         <option value="Simonesia">Simonesia</option>
       </select>
 
@@ -56,27 +56,59 @@
 
       <div class="mb-3">
         <label for="senha" class="form-label">senha</label>
-        <input type="password" name="senha" id="senha" class="form-control" aria-describedby="senha">
+        <input type="password" name="senha" required placeholder="Senha" id="senha" class="form-control" aria-describedby="nome">
+        <!--olha eu-->
         <div id="senha" class="form-text"> Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve
           conter espaços, caracteres especiais ou emoji. </div>
       </div>
 
-<!--<div class="mb-3">
-        <label for="senha" class="form-label">Confirmar Senha</label>
-        <input type="password" name="senhaconf" required placeholder="Confirmar Senha" id="senhaconf" class="form-control" aria-describedby="senha">
+      <div class="mb-3">
+        <label for="senhaconf" class="form-label">Confirmar Senha</label>
+        <input type="password" name="senhaconf" required placeholder="Confirmar Senha" id="senhaconf" class="form-control" aria-describedby="nome">
+        <!--olha eu-->
       </div>
 
+      <!--olha eu-->
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="ternos">
-        <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label>
-      </div>-->
+        <!--<input type="checkbox" class="form-check-input" id="ternos">
+        <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label> -->
+        <input type="text" id="ternos">
+        <div id="ternoaceito" class="form-text"> escreva "Aceito" </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          TERMOS E CONDIÇÕES
+        </button>
+        <!--cabo olha eu-->
+      </div>
+
       <div class="mb-3">
         <input type="text" name="action" id="action" value="cadastrar" hidden>
         <button type="submit" value="Cadastrar" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
-        
+
         <button type="reset" value="Cancelar" class=" btn btn-danger">Cancelar</button><!-- colocar o cancelar do lado do cadastrar e uma ideia muito boa -->
     </form>
   </div>
 </div>
 </div>
+<!--olha eu-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">termos e condições</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <?php include 'termos.txt'; ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--cabo olha eu-->
 <?php include '../footer.php'; ?>
