@@ -11,10 +11,10 @@
 
     <form name="cadastro" method="get" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
 
-      <!--<div class="mb-3">
+      <div class="mb-3">
         <label for="foto" class="form-label">Foto de perfil:</label>
         <input type="file" name="foto" required placeholder="Foto" id="foto" class="form-control">
-      </div>-->
+      </div>
       <div class="mb-3">
         <label for="nome" class="form-label">Nome:</label>
         <input type="text" name="nome" required placeholder="Nome" id="nome" class="form-control" aria-describedby="nome">

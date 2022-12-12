@@ -1,7 +1,8 @@
 <?php
 
-//include_once "//kimmim.shop/controladormysql\FotoDAO.php";
-//include_once "//kimmim.shop/controladormysql\UsuarioDAO.php";
+include_once "//kimmim.shop/controladormysql/FotoDAO.php";
+include_once "//kimmim.shop/controladormysql/UsuarioDAO.php";
+
 $id_usuario = filter_input(INPUT_GET,"id_usuario");
 $nome = filter_input(INPUT_GET,"nome");
 $usuario = filter_input(INPUT_GET,"usuario");
@@ -13,20 +14,20 @@ $servico = filter_input(INPUT_GET,"servico");
 $senha = filter_input(INPUT_GET,"senha");
 $action =  filter_input(INPUT_GET,"action");
 
-/*if(isset($id_usuario)){
+if(isset($id_usuario)){
     $user = new Usuario($usuario,$email,$senha,$id_usuario,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
 } else {
     $user = new Usuario($usuario,$email,$senha,null,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
-}*/
+}
 
-//$usuarioDAO = new UsuarioDAO();
+$usuarioDAO = new UsuarioDAO();
 
 // Se o usuário clicou no botão cadastrar efetua as ações
 //if (isset($_POST['cadastrar'])) {
 if ($action == "cadastrar"){
     echo "Construi";
     
-    /*// Recupera os dados dos campos
+    // Recupera os dados dos campos
     $foto = $_FILES["foto"];
     
     // Se a foto estiver sido selecionada
@@ -79,5 +80,5 @@ if ($action == "cadastrar"){
                 echo "Usuario Criado com sucesso";
             }
         }
-    }*/
+    }
 }
