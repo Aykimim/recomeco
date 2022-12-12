@@ -50,15 +50,15 @@
   <div class="container px-4 text-center">
     <div class="rounded row gx-5">
       <div class="col">
-        <div class=" img-thumbnail border bg-light"><img src="/visualizar/img/manhuacu.png" class="img-fluid"></div>
+        <div class=" img-thumbnail border bg-light"><a href="https://kimmim.shop/visualizar/html/exibeperfils.php?cidade=Manhuacu"><img src="/visualizar/img/manhuacu.png" class="img-fluid"></a></div>
         <figcaption class="figure-caption text-center">Manhuaçu</figcaption>
       </div>
       <div class="col">
-        <div class="img-thumbnail border bg-light"><img src="/visualizar/img/manhumirim.png" class="img-fluid"></div>
+        <div class="img-thumbnail border bg-light"><a href="https://kimmim.shop/visualizar/html/exibeperfils.php?cidade=Manhumirim"><img src="/visualizar/img/manhumirim.png" class="img-fluid"></div>
         <figcaption class="figure-caption text-center">Manhumirim</figcaption>
       </div>
       <div class="col">
-        <div class="img-thumbnail border bg-light"> <img src="/visualizar/img/simonesia.png" class="img-fluid"></div>
+        <div class="img-thumbnail border bg-light"><a href="https://kimmim.shop/visualizar/html/exibeperfils.php?cidade=Simonesia"> <img src="/visualizar/img/simonesia.png" class="img-fluid"></div>
         <figcaption class="figure-caption text-center">Simonesia</figcaption>
       </div>
     </div>

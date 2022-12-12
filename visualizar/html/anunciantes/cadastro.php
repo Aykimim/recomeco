@@ -21,9 +21,9 @@ if (isset($senhanaoconf)) { ?>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
-<?php } ?>
+<?php } //ate aqui?>
 
-//ate aqui
+
 <div class="container">
   <div class="row ">
     <div class="mb-3 mt-3">
@@ -96,13 +96,14 @@ if (isset($senhanaoconf)) { ?>
       <div class="mb-3 form-check">
         <!--<input type="checkbox" class="form-check-input" id="ternos">
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label> -->
-        <label for="termosaceito" class="form-label">Escreva "Aceito" para aceitar termos e condições</label>
-        <input type="text" required placeholder="Aceito" id="ternos">
-
-        <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           TERMOS E CONDIÇÕES
         </button>
+        <label for="termosaceito" class="form-label">Escreva "Aceito" para aceitar termos e condições:</label></br>
+        <input type="text" required placeholder="Aceito" id="ternos">
+
+        <!-- Button trigger modal -->
+        
         <!--cabo olha eu-->
       </div>
 
@@ -135,5 +136,6 @@ if (isset($senhanaoconf)) { ?>
     </div>
   </div>
 </div>
+
 <!--cabo olha eu-->
 <?php include '../footer.php'; ?>
