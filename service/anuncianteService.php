@@ -24,8 +24,9 @@ $usuarioDAO = new UsuarioDAO;
 // Se o usuário clicou no botão cadastrar efetua as ações
 //if (isset($_POST['cadastrar'])) {
 if ($action == "cadastrar"){
+    echo "Construi";
     
-    // Recupera os dados dos campos
+    /*// Recupera os dados dos campos
     $foto = $_FILES["foto"];
     
     // Se a foto estiver sido selecionada
@@ -78,5 +79,5 @@ if ($action == "cadastrar"){
                 echo "Usuario Criado com sucesso";
             }
         }
-    }
+    }*/
 }
