@@ -19,7 +19,7 @@ $action =  filter_input(INPUT_GET,"action");
     $user = new Usuario($usuario,$email,$senha,null,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
 }*/
 
-$usuarioDAO = new UsuarioDAO;
+$usuarioDAO = new UsuarioDAO();
 
 // Se o usuário clicou no botão cadastrar efetua as ações
 //if (isset($_POST['cadastrar'])) {

@@ -5,7 +5,7 @@ $cidade = filter_input(INPUT_GET,"cidade");
 
 $usuarioDAO = new UsuarioDAO();
 
-$result = usuarioDAO->getAllCity($cidade);
+$result = $user>getAllCity($cidade);
 ?>
 
 <?php 

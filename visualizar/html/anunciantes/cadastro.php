@@ -39,7 +39,7 @@
       <select class="form-select" aria-label="cidade" name="cidade" id="cidade">
         <option selected>cidade:</option>
         <option value="Manhuacu">Manhuacu</option>
-        <option value="Manhuacu">Manhuacu</option>
+        <option value="Manhumirim">Manhumirin</option>
         <option value="Simonesia">Simonesia</option>
       </select>
 
