@@ -86,8 +86,8 @@ if ($senha != $senhaconf) {
                 move_uploaded_file($foto["tmp_name"], $caminho_imagem);
 
                 //Salva a foto no perfil de usuario;
-                $user->setFotoPerfil($caminho_imagem);
-                //$user->setFotoPerfil($_SERVER['SERVER_NAME']."/visualizar/img/fotosDosUsuario/".$nome_imagem);
+               
+                $user->setFotoPerfil("https://kimmim.shop/visualizar/img/fotosDosUsuario/".$nome_imagem);
                 $user->setIdUsuario(null);
                 try {
                     if ($usuarioDAO->create($user)) {
