@@ -72,8 +72,9 @@
       <div class="mb-3 form-check">
         <!--<input type="checkbox" class="form-check-input" id="ternos">
         <label class="form-check-label" for="ternos">Ainda não tem ternos para concordar</label> -->
-        <input type="text" id="ternos">
-        <div id="ternoaceito" class="form-text"> escreva "Aceito" </div>
+        <label for="termosaceito" class="form-label">Escreva "Aceito" para aceitar termos e condições</label>
+        <input type="text" required placeholder="Aceito" id="ternos">
+        
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           TERMOS E CONDIÇÕES
@@ -97,7 +98,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">termos e condições</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Termos e condições</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
