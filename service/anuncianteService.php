@@ -2,16 +2,16 @@
 
 include_once "//kimmim.shop/controladormysql\FotoDAO.php";
 include_once "//kimmim.shop/controladormysql\UsuarioDAO.php";
-$id_usuario = filter_input(INPUT_POST,"id_usuario");
-$nome = filter_input(INPUT_POST,"nome");
-$usuario = filter_input(INPUT_POST,"usuario");
-$email = filter_input(INPUT_POST,"email");
-$biografia= filter_input(INPUT_POST,"biografia");
-$cidade = filter_input(INPUT_POST,"cidade");
-$telefone = filter_input(INPUT_POST,"telefone");
-$servico = filter_input(INPUT_POST,"servico");
-$senha = filter_input(INPUT_POST,"senha");
-$action =  filter_input(INPUT_POST,"action");
+$id_usuario = filter_input(INPUT_GET,"id_usuario");
+$nome = filter_input(INPUT_GET,"nome");
+$usuario = filter_input(INPUT_GET,"usuario");
+$email = filter_input(INPUT_GET,"email");
+$biografia= filter_input(INPUT_GET,"biografia");
+$cidade = filter_input(INPUT_GET,"cidade");
+$telefone = filter_input(INPUT_GET,"telefone");
+$servico = filter_input(INPUT_GET,"servico");
+$senha = filter_input(INPUT_GET,"senha");
+$action =  filter_input(INPUT_GET,"action");
 
 if($id_usuario!=null){
     $user = new Usuario($usuario,$email,$senha,$id_usuario,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
