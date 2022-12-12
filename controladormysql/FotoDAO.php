@@ -1,7 +1,7 @@
 <?php
 include_once 'UniversalConnect.php';
 
-include_once "./models/Foto.php";
+include_once "//kimmim.shop/models/Foto.php";
 
  class FotoDAO{
     private $link;
