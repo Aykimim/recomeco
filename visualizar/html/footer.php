@@ -4,7 +4,7 @@
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="fixed-bottom">
+<!--<div class="fixed-bottom">-->
   <footer>
     <div class="d-flex justify-content-center footer-content">
 
@@ -32,7 +32,7 @@
     </div>
     </style>
   </footer>
-</div>
+<!-- </div>-->
 </body>
 
 

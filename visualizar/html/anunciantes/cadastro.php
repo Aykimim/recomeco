@@ -9,7 +9,7 @@
     </div>
 
 
-    <form name="cadastro" method="post" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
+    <form name="cadastro" method="get" enctype="multipart/form-data" action="//kimmim.shop/service/anuncianteService.php">
 
       <div class="mb-3">
         <label for="foto" class="form-label">Foto de perfil:</label>
