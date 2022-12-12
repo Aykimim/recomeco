@@ -13,7 +13,7 @@ $servico = filter_input(INPUT_GET,"servico");
 $senha = filter_input(INPUT_GET,"senha");
 $action =  filter_input(INPUT_GET,"action");
 
-if($id_usuario!=null){
+if(isset($id_usuario)){
     $user = new Usuario($usuario,$email,$senha,$id_usuario,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
 } else {
     $user = new Usuario($usuario,$email,$senha,null,$nome,$biografia,$cidade,$telefone,$servico,$fotoPerfil);
