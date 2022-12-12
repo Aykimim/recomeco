@@ -23,7 +23,13 @@
       <!--BARRA DE PESQUISA-->
         <span id="divBusca">
           <form class="d-flex" role="search">
-            <input class="form-control me-2 " type="search" placeholder="Pesquisa" aria-label="Search">
+          <select class="form-select" aria-label="cidade" name="cidade" id="cidade">
+        <option selected>cidade:</option>
+        <option href="https://kimmim.shop/visualizar/html/exibeperfils.php?cidade=Manhuacu value="Manhuacu">Manhuacu</option>
+        <option href="https://kimmim.shop/visualizar/html/exibeperfils.php?cidade=Manhumirim value="Manhumirim">Manhumirim</option>
+        <option https://kimmim.shop/visualizar/html/exibeperfils.php?cidade=Simonesia value="Simonesia">Simonesia</option>
+      </select>
+            <!--<input class="form-control me-2 " type="search" placeholder="Pesquisa" aria-label="Search">-->
             <button class="btn btn-outline-success btn-info link-dark" type="Buscar">Buscar</button>
           </form>
         </span>

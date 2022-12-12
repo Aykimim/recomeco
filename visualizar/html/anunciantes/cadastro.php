@@ -59,6 +59,7 @@ if (isset($senhanaoconf)) { ?>
         <label for="biogragia" class="form-label">biografia:</label>
         <input type="text" name="biografia" required placeholder="biografia" rows="3" id="biografia" class="form-control" aria-describedby="nome">
       </div>
+      
       <label for="cidade" class="form-label">cidade:</label>
       <select class="form-select" aria-label="cidade" name="cidade" id="cidade">
         <option selected>cidade:</option>
