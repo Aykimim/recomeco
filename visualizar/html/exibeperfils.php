@@ -1,12 +1,14 @@
 <?php include 'header.php'; ?>
-
+<?php echo 'oi'?>
 <?php
 
 $cidade = filter_input(INPUT_GET,"cidade");
 
 $usuarioDAO = new UsuarioDAO();
 
-$result = $user->getAllCity($cidade);
+$result = $usuarioDAO->getAllCity($cidade);
+
+print_r($result);
 ?>
 
 <?php 
@@ -22,6 +24,8 @@ foreach($result as $user){?>
   </div>
 </div>
 <?php } ?>
+
+<!-- roda pe -->
 
 <?php include 'footer.php'; ?>
 
