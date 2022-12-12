@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+
 <?php
 
 $cidade = filter_input(INPUT_GET,"cidade");
@@ -20,8 +21,6 @@ foreach($result as $user){?>
   </div>
 </div>
 <?php } ?>
-https://rafaelcouto.com.br/salvar-imagem-no-banco-de-dados-com-php-mysql/
-https://rafaelcouto.com.br/upload-simples-de-imagem-com-php-mysql/
 
 <?php include 'footer.php'; ?>
 
