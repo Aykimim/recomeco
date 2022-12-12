@@ -35,11 +35,11 @@ if ($action == "cadastrar"){
     if (!empty($foto["name"])) {
         
         // Largura máxima em pixels
-        $largura = 150;
+        $largura = 10000;
         // Altura máxima em pixels
-        $altura = 180;
+        $altura = 10000;
         // Tamanho máximo do arquivo em bytes
-        $tamanho = 1000;
+        $tamanho = 5000000;
         $error = array();
         // Verifica se o arquivo é uma imagem
         if(!preg_match("/^image\/(pjpeg|jpeg|png|gif|bmp)$/", $foto["type"])){
@@ -70,17 +70,29 @@ if ($action == "cadastrar"){
             // Gera um nome único para a imagem
             $nome_imagem = md5(uniqid(time())) . "." . $ext[1];
             // Caminho de onde ficará a imagem
-            $caminho_imagem = "fotosdosusuario/" . $nome_imagem . $id_usuario;
+            $caminho_imagem = $_SERVER['DOCUMENT_ROOT'] . "/visualizar/img/fotosDosUsuario/" . $nome_imagem . $id_usuario;
             // Faz o upload da imagem para seu respectivo caminho
             move_uploaded_file($foto["tmp_name"], $caminho_imagem);
         
             //Salva a foto no perfil de usuario;
             $user->setFotoPerfil($caminho_imagem);
             $user->setIdUsuario(null);
-            if($userDAO->create($user)){
-                echo "Usuario Criado com sucesso";
-            } else {
-                echo "Deu ruim";
+            try{
+                if($usuarioDAO->create($user)){
+                    echo "Usuario Criado com sucesso";
+                } else {
+                    echo "Deu ruim";
+                }
+            } catch (PDOException $e){
+                echo "Deu ruim no try";
+                echo $e->getMessage();
+            }
+ 
+        }
+
+        if (count($error) != 0) {
+            foreach ($error as $erro) {
+                echo $erro . "<br />";
             }
         }
     }

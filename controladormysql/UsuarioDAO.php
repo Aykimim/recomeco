@@ -15,7 +15,7 @@ class UsuarioDAO
     public function create(Usuario $user)
     {
 
-        $sql = "INSERT INTO usuario (usuario,email,senha,nome,biografia,cidade,telefone,servico,fotoPerfil) values (:usuario, :email, :senha, :nome, :biografia, :cidade, :telefone, :servico, :fotoPerfil)";
+        $sql = "INSERT INTO Usuario (usuario,email,senha,nome,biografia,cidade,telefone,servico,fotoPerfil) values (:usuario, :email, :senha, :nome, :biografia, :cidade, :telefone, :servico, :fotoPerfil)";
         $stm = $this->link->prepare($sql);
         $stm->bindValue(":usuario", $user->getUsuario());
         $stm->bindValue(":email", $user->getEmail());
@@ -60,7 +60,7 @@ class UsuarioDAO
         }
     }
 
-    public function getOne(Usuario $user)
+    /*public function getOne(Usuario $user)
     {
         $sql = "SELECT * FROM tbUser WHERE usuario = :usuario AND senha AND senha = :senha";
         $stm = $this->link->prepare($sql);
@@ -75,11 +75,11 @@ class UsuarioDAO
         } else {
             return null;
         }
-    }
+    }*/
 
     public function getAllCity($cidade)
     {
-        $sql = "SELECT * FROM usuario WHERE cidade = :cidade";
+        $sql = "SELECT * FROM Usuario WHERE cidade = :cidade";
         $stm = $this->link->prepare($sql);
         $stm->bindValue(":cidade", $cidade);
         $stm->execute();
@@ -91,7 +91,7 @@ class UsuarioDAO
     }
     public function getOneuser($idusuario)
     {
-        $sql = "SELECT * FROM usuario WHERE idusuario = :idusuario";
+        $sql = "SELECT * FROM Usuario WHERE idusuario = :idusuario";
         $stm = $this->link->prepare($sql);
         $stm->bindValue(":idusuario", $idusuario);
         $stm->execute();
