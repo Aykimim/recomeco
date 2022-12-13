@@ -1,0 +1,2 @@
+[12-Dec-2022 20:12:50 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/kimmim21/public_html/pessoamysql/enviar_email.php:17) in /home2/kimmim21/public_html/pessoamysql/enviar_email.php on line 20
+[12-Dec-2022 20:12:54 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/kimmim21/public_html/pessoamysql/enviar_email.php:17) in /home2/kimmim21/public_html/pessoamysql/enviar_email.php on line 20

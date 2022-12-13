@@ -1,7 +1,7 @@
 <?php
 include_once 'UniversalConnect.php';
 
-include_once $_SERVER['DOCUMENT_ROOT'] . "/models/Comentarios.php";
+include_once "./models/Comentarios.php";
 
 class ComentariosDAO
 {
@@ -12,15 +12,15 @@ class ComentariosDAO
         $this->link = UniversalConnect::doConnect();
     }
 
-    public function create(Comentarios $coment)
+    public function create(Comentarios $user)
     {
 
         $sql = "INSERT INTO Comentarios (nome,comentario,data,Usuario_idUsuario) values (:nome, :comentario, :data, :Usuario_idUsuario)";
         $stm = $this->link->prepare($sql);
-        $stm->bindValue(":nome", $coment->getNome());
-        $stm->bindValue(":comentario", $coment->getComentario());
-        $stm->bindValue(":data", $coment->getData());
-        $stm->bindValue(":Usuario_idUsuario", $coment->getUsuario_idUsuario());
+        $stm->bindValue(":nome", $user->getNome());
+        $stm->bindValue(":comentario", $user->getComentario());
+        $stm->bindValue(":data", $user->getData());
+        $stm->bindValue(":Usuario_idUsuario", $user->getUsuario_idUsuario());
         if ($stm->execute()) {
             return true;
         } else {

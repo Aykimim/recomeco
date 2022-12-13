@@ -8,6 +8,7 @@ $usuarioDAO = new UsuarioDAO();
 $result = $usuarioDAO->getAllCity($cidade);
 
 ?>
+<div class="container min-vh-100">
 <div class="mb-3 mt-3">
   <center>
     <h2><?php echo $cidade ?></h2>
@@ -40,7 +41,7 @@ $result = $usuarioDAO->getAllCity($cidade);
 
   </div>
 </div>
-
+</div>
 
 <!-- roda pe -->
 

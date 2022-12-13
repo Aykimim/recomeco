@@ -1,0 +1,14 @@
+[12-Dec-2022 18:47:25 America/Fortaleza] PHP Warning:  include(conecao.php): Failed to open stream: No such file or directory in /home2/kimmim21/public_html/service/validarLoginService.php on line 2
+[12-Dec-2022 18:47:25 America/Fortaleza] PHP Warning:  include(): Failed opening 'conecao.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/kimmim21/public_html/service/validarLoginService.php on line 2
+[12-Dec-2022 18:47:25 America/Fortaleza] PHP Warning:  Undefined variable $mysqli in /home2/kimmim21/public_html/service/validarLoginService.php on line 13
+[12-Dec-2022 18:47:25 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home2/kimmim21/public_html/service/validarLoginService.php:13
+Stack trace:
+#0 {main}
+  thrown in /home2/kimmim21/public_html/service/validarLoginService.php on line 13
+[12-Dec-2022 18:50:03 America/Fortaleza] PHP Warning:  include(conecao.php): Failed to open stream: No such file or directory in /home2/kimmim21/public_html/service/validarLoginService.php on line 2
+[12-Dec-2022 18:50:03 America/Fortaleza] PHP Warning:  include(): Failed opening 'conecao.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/kimmim21/public_html/service/validarLoginService.php on line 2
+[12-Dec-2022 18:50:03 America/Fortaleza] PHP Warning:  Undefined variable $mysqli in /home2/kimmim21/public_html/service/validarLoginService.php on line 13
+[12-Dec-2022 18:50:03 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home2/kimmim21/public_html/service/validarLoginService.php:13
+Stack trace:
+#0 {main}
+  thrown in /home2/kimmim21/public_html/service/validarLoginService.php on line 13

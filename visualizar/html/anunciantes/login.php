@@ -14,7 +14,7 @@ if (isset($cadastro)) { ?>
 
 <?php } ?>
 
-
+<div class="container min-vh-100">
 <div class="d-flex justify-content-center footer-content">
   <div class="container">
     <div class="row ">
@@ -50,6 +50,7 @@ if (isset($cadastro)) { ?>
 
     </div>
   </div>
+</div>
 </div>
 <!--fim formulario de login -->
 <?php include '../footer.php'; ?>
