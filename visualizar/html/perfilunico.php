@@ -1,5 +1,30 @@
 <?php include 'header.php'; ?>
 <?php
+//olha eu daqui
+$enviado = filter_input(INPUT_GET, "enviado");
+$falha = filter_input(INPUT_GET, "falha");
+
+
+if (isset($falha)) { ?>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Comentario não enviado</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+<?php }
+
+if (isset($enviado)) { ?>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Comentario enviado</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+<?php } //ate aqui
+?>
+
+<?php
 include_once $_SERVER['DOCUMENT_ROOT'] . "/controladormysql/UsuarioDAO.php";
 
 $idUsuario = filter_input(INPUT_GET, "idUsuario");
@@ -13,8 +38,21 @@ if (isset($idUsuario)) {
     echo $e->getMessage();
   }
 }
-
 ?>
+<?php
+//olha eu
+
+include_once $_SERVER['DOCUMENT_ROOT'] . "/controladormysql/ComentarioDAO.php";
+$Usuario_idUsuario = filter_input(INPUT_GET, "Usuario_idUsuario");
+
+$ComentariosDAO = new ComentariosDAO();
+
+$result = $ComentariosDAO->getAllComent($Usuario_idUsuario);
+
+
+//ate aqui
+?>
+
 
 
 <div class="container">
@@ -46,39 +84,41 @@ if (isset($idUsuario)) {
 
       </div>
     </div>
-    
+
     <form name="comentario" method="post" enctype="multipart/form-data" action="//kimmim.shop/service/comentarioService.php>
         
-  <div class="mb-3">
-    <label for="Nomecoment" class="form-label">Nome:</label>
-    <input type="text" class="form-control" id="Nomecoment" aria-describedby="emailHelp">
+  <div class=" mb-3">
+      <label for="nome" class="form-label">Nome:</label>
+      <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-    <label for="Comentario" class="form-label">Comentario:</label>
-    <input type="text" class="form-control" id="Comentario">
+    <label for="comentario" class="form-label">Comentario:</label>
+    <input type="text" class="form-control" id="comentario">
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-    
-    
-    
-    
-<div class="mb-3 mt-3">    
+  </form>
+
+
+
+
+  <div class="mb-3 mt-3">
     <div class="card">
       <div class="card-header">
-       Nome:<?php echo $Nomecoment ?>
+        Nome:<?php echo $Nomecoment ?>
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p><li class="list-group-item">Comentario:<?php echo $comentario ?></li></p>
+          <p>
+            <li class="list-group-item">Comentario:<?php echo $comentario ?></li>
+          </p>
         </blockquote>
       </div>
     </div>
-  </div>   
-
-
   </div>
+
+
+</div>
 </div>
 
 
