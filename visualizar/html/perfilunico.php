@@ -96,7 +96,7 @@ $result = $ComentariosDAO->getAllComent($Usuario_idUsuario);
     <input type="text" class="form-control" id="comentario">
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 
 
